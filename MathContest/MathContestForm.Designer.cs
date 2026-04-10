@@ -170,6 +170,7 @@
             NameTextBox.Name = "NameTextBox";
             NameTextBox.Size = new Size(167, 35);
             NameTextBox.TabIndex = 11;
+            NameTextBox.TextChanged += NameTextBox_TextChanged;
             // 
             // AgeTextBox
             // 
@@ -177,6 +178,7 @@
             AgeTextBox.Name = "AgeTextBox";
             AgeTextBox.Size = new Size(51, 35);
             AgeTextBox.TabIndex = 12;
+            AgeTextBox.TextChanged += AgeTextBox_TextChanged;
             // 
             // GradeTextBox
             // 
@@ -184,9 +186,11 @@
             GradeTextBox.Name = "GradeTextBox";
             GradeTextBox.Size = new Size(71, 35);
             GradeTextBox.TabIndex = 13;
+            GradeTextBox.TextChanged += GradeTextBox_TextChanged;
             // 
             // FirstNumberTextBox
             // 
+            FirstNumberTextBox.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FirstNumberTextBox.Location = new Point(6, 66);
             FirstNumberTextBox.Name = "FirstNumberTextBox";
             FirstNumberTextBox.Size = new Size(167, 35);
@@ -194,6 +198,7 @@
             // 
             // SecondNumberTextBox
             // 
+            SecondNumberTextBox.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SecondNumberTextBox.Location = new Point(6, 136);
             SecondNumberTextBox.Name = "SecondNumberTextBox";
             SecondNumberTextBox.Size = new Size(167, 35);
