@@ -66,6 +66,7 @@
             SubmitButton.TabIndex = 0;
             SubmitButton.Text = "Submit";
             SubmitButton.UseVisualStyleBackColor = true;
+            SubmitButton.Click += SubmitButton_Click;
             // 
             // ClearButton
             // 
@@ -75,6 +76,7 @@
             ClearButton.TabIndex = 1;
             ClearButton.Text = "Clear";
             ClearButton.UseVisualStyleBackColor = true;
+            ClearButton.Click += ClearButton_Click;
             // 
             // SummaryButton
             // 
@@ -84,6 +86,7 @@
             SummaryButton.TabIndex = 2;
             SummaryButton.Text = "Summary";
             SummaryButton.UseVisualStyleBackColor = true;
+            SummaryButton.Click += SummaryButton_Click;
             // 
             // ExitButton
             // 
@@ -93,6 +96,7 @@
             ExitButton.TabIndex = 3;
             ExitButton.Text = "Exit";
             ExitButton.UseVisualStyleBackColor = true;
+            ExitButton.Click += ExitButton_Click;
             // 
             // ButtonsGroupBox
             // 
