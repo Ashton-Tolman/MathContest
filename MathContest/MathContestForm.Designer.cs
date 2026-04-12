@@ -252,6 +252,7 @@
             AdditionRadioButton.TabStop = true;
             AdditionRadioButton.Text = "Addition";
             AdditionRadioButton.UseVisualStyleBackColor = true;
+            AdditionRadioButton.CheckedChanged += AdditionRadioButton_CheckedChanged;
             // 
             // SubtractionRadioButton
             // 
@@ -263,6 +264,7 @@
             SubtractionRadioButton.TabStop = true;
             SubtractionRadioButton.Text = "Subtraction";
             SubtractionRadioButton.UseVisualStyleBackColor = true;
+            SubtractionRadioButton.CheckedChanged += SubtractionRadioButton_CheckedChanged;
             // 
             // MultiplicationRadioButton
             // 
@@ -274,6 +276,7 @@
             MultiplicationRadioButton.TabStop = true;
             MultiplicationRadioButton.Text = "Multiplication";
             MultiplicationRadioButton.UseVisualStyleBackColor = true;
+            MultiplicationRadioButton.CheckedChanged += MultiplicationRadioButton_CheckedChanged;
             // 
             // DivisionRadioButton
             // 
@@ -285,6 +288,7 @@
             DivisionRadioButton.TabStop = true;
             DivisionRadioButton.Text = "Division";
             DivisionRadioButton.UseVisualStyleBackColor = true;
+            DivisionRadioButton.CheckedChanged += DivisionRadioButton_CheckedChanged;
             // 
             // MathTypeGroupBox
             // 

@@ -32,6 +32,8 @@ namespace MathContest
             SecondNumberTextBox.Enabled = false;
             ValidateFields();
             FillNumbers();
+            submissions = 0;
+            correctAnswers = 0;
         }
 
 
@@ -144,9 +146,11 @@ namespace MathContest
                     answer = firstNumber * secondNumber;
 
                     break;
+
+                //Absolute answers only
                 case bool when DivisionRadioButton.Checked == true:
                     answer = firstNumber / secondNumber;
-
+                    Math.Round(1.00, answer);
                     break;
             }
             return answer;
@@ -171,6 +175,7 @@ namespace MathContest
                     MessageBox.Show("Sorry, thats wrong!");
                 }
                 submissions++;
+                SummaryButton.Enabled = true;
                 FillNumbers();
             }
             catch (Exception)
@@ -190,7 +195,7 @@ namespace MathContest
 
         private void SummaryButton_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show($"{NameTextBox.Text} got {correctAnswers} out of {submissions} right!");
         }
 
 
@@ -249,6 +254,32 @@ namespace MathContest
             {
                 StudentAnswerTextBox.BackColor = Color.LightYellow;
             }
+        }
+
+
+        //These events change the first and second number 
+        //happens when problem type changes
+        private void AdditionRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            FillNumbers();
+        }
+
+        private void SubtractionRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            FillNumbers();
+
+        }
+
+        private void MultiplicationRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            FillNumbers();
+
+        }
+
+        private void DivisionRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            FillNumbers();
+
         }
     }
 }
