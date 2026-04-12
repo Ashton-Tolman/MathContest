@@ -1,3 +1,8 @@
+/* Ashton Tolman
+ * Spring 2026
+ * MathContest
+ * https://github.com/Ashton-Tolman/MathContest.git
+ */
 using System.CodeDom.Compiler;
 
 namespace MathContest
@@ -147,7 +152,7 @@ namespace MathContest
 
                     break;
 
-                //Absolute answers only
+                //Math.Round makes it round to the nearest 1
                 case bool when DivisionRadioButton.Checked == true:
                     answer = firstNumber / secondNumber;
                     Math.Round(1.00, answer);
@@ -199,6 +204,9 @@ namespace MathContest
         }
 
 
+
+        //in all text box changed methods if the submit button has been clicked
+        //at least once it resets the fields
         private void NameTextBox_TextChanged(object sender, EventArgs e)
         {
             if (submissions >= 1)
@@ -244,6 +252,8 @@ namespace MathContest
             }
         }
 
+
+        //Submit button clicked once does not apply to this field
         private void StudentAnswerTextBox_TextChanged(object sender, EventArgs e)
         {
             if (ValidateFields())
