@@ -210,6 +210,7 @@
             StudentAnswerTextBox.Name = "StudentAnswerTextBox";
             StudentAnswerTextBox.Size = new Size(167, 35);
             StudentAnswerTextBox.TabIndex = 16;
+            StudentAnswerTextBox.TextChanged += StudentAnswerTextBox_TextChanged;
             // 
             // MathProblemGroupBox
             // 
